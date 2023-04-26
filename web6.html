@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="layout.css">
+      <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+      <title>Toggle Switch Buttons</title>
+  </head>
+  <body>
+      <div class="content__button">
+          <div class="content__button--button">
+              <section>
+                      <label for="toggle-1" class="toggle-1">
+                          <input type="checkbox" name="toggle-1" id="toggle-1" class="toggle-1__input">
+                          <span class="toggle-1__button"></span>
+                      </label>
+              </section>
+          </div>
+  
+  </div>
+      </div>
+  </body>
+  </html>
+  
+  <body>
+      <style>
+          * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  body {
+      background-color: #d2d2d2;
+      font-family: 'Roboto', sans-serif;
+      color: #5a5a5a;
+  }
+  
+  .content {
+      background-color: #fafafa;
+      position: relative;
+      max-width: 700px;
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 15px;
+      text-align: center;
+  }
+  
+  .content__head {
+      padding: 50px 0 30px 0;
+      color: #000;
+      position: relative;
+  }
+  
+      .content__head--name {
+          font-size: 1.5rem;
+          letter-spacing: 0.4em;
+          padding-bottom: 26px;
+          text-transform: uppercase;
+      }
+      .content__head--line {
+          background-color: #000;
+          width: 18vw;
+          height: 5px;
+          margin: auto;
+        
+      }
+  
+      .pattern-gray {
+          background-color: #edecec;
+          height: 300px;
+          width: 100%;
+          position: absolute;
+          transform: skewY(-5deg);
+          top: 10px;
+      }
+  
+  .content__button {
+      display: flex;
+  }
+      .content__button--button {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  
+  section {
+      font-family: 'Amiri', serif;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0;
+      text-align: start;
+      letter-spacing: 0.1em;
+  }
+  
+  .text__toggle {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Amiri', serif;
+          width: 40%;
+          margin: 30px 0;
+          text-align: start;
+          letter-spacing: 0.1em;
+          z-index: 1;
+      }
+  
+          .text__toggle--p {
+              padding: 35px 0;
+          }
+  
+  footer {
+      font-family: 'Amiri', serif;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      letter-spacing: 0.2em;
+  }
+  
+      .footer__made-by {
+          padding-top: 20px;
+          font-size: 0.9rem;
+      }
+          .footer__detail--link {
+              text-decoration: none;
+              color: #2973CB;
+          }
+  
+  
+  @media only screen and (max-width: 600px) {
+      .content {
+          max-width: 700px;
+      }
+  }
+  
+  @media only screen and (max-width: 425px) {
+      .content__button--button {
+          width: 55%;
+      }
+      .text__toggle {
+          width: 45%;
+      }
+      .content {
+          border-radius: 0;
+          margin: 0;
+      }
+  }
+  
+  
+  /* =========================
+      On / Off
+  ========================= */
+  
+  .toggle-1 {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 50px 0 0;
+  }
+  
+      .toggle-1__input {
+          display: none;
+      }
+  
+      .toggle-1__button {
+          position: relative;
+          cursor: pointer;
+          display: inline-block;
+  
+          font-family: 'Roboto', sans-serif;
+          text-transform: uppercase;
+          font-size: 1rem;
+          line-height: 50px;
+  
+          width: 120px;
+          height: 40px;
+          color: white;
+          background-color: #f2395a;
+          border: solid 1px #f2395a;
+          box-shadow: 0 0 12px rgba(255, 61, 94, 0.5);
+  
+          transition: all 0.3 ease;
+      }
+  
+      .toggle-1__button::before {
+          position: absolute;
+          display: flex;
+          align-items: center;
+  
+          top: 4px;
+          left: 60px;
+          height: 30px;
+          padding: 0 10px;
+  
+          content: "off";
+          background: white;
+          color: #f2395a;
+          transition: all 0.3s ease;
+          
+      }
+  
+      .toggle-1__input:checked + .toggle-1__button {
+          background: #8ECF45;
+          border: solid 1px #8ECF45;
+          box-shadow: 0 2px 20px rgba(142, 207, 69, 0.5);
+  
+      }
+  
+      .toggle-1__input:checked + .toggle-1__button::before {
+          content: 'on';
+          left: 5px;
+          color:#8ECF45;
+      }
+  
+  </style>
+<head>
+   
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/7664059.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+
+<center><h3><span style="color:black;">
+    <div><center><span style="color:#ffffff;">
+        <h1 class="one" style="white-space: nowrap; display: inline-block; font-size: 115.385px;">PUCCI</h1>
+    <center>    
+        And this is the third page. wish you enjoy.
+</h3>
+</head>
+<br><br><br><br><br>
+<div class="card" style="width:50%;">
+    <a href="https://www.youtube.com/watch?v=-2NQMWDdfA4" target="_blank">
+      <div class="box1">
+        <h2>CENTAURS</h2>
+      </div>
+    </a>
+    
+    <a href="https://www.youtube.com/watch?v=vH8pzI0u-6M" target="_blank">
+      <div class="box2">
+        <h2>GRIFFINS</h2>
+      </div>
+    </a>
+    
+    <a href="https://www.youtube.com/watch?v=n3iOSJsHcpg" target="_blank">
+      <div class="box3">
+        <h2>MANTICORE</h2>
+      </div>
+    </a>
+    
+    <a href="https://www.youtube.com/watch?v=bB5sUL9lI7I" target="_blank">
+      <div class="box4">
+        <h2>SIRENS</h2>
+      </div>
+    </a>
+</div>
+</div>
+
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .phuket {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd6652e6-aac5-47a1-bb7d-11d3e6580335/daz223a-460b7abd-105e-4230-ba73-5fcc7e8e5ab6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZkNjY1MmU2LWFhYzUtNDdhMS1iYjdkLTExZDNlNjU4MDMzNVwvZGF6MjIzYS00NjBiN2FiZC0xMDVlLTQyMzAtYmE3My01ZmNjN2U4ZTVhYjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gd5jy-lC6TL5y96rPJwN6hm1LwMypetSepnBj6-ckDA");
+  }
+  .box2 {
+    background-image: url("https://i.ytimg.com/vi/8QpHgk9OUEA/maxresdefault.jpg");
+  }
+  .box3 {
+    background-image: url("https://goggleofhindsight.files.wordpress.com/2019/09/manticore-photo.jpg");
+  }
+  .box4 {
+    background-image: url("https://i.pinimg.com/originals/6a/09/fe/6a09fea08b4361da1dbc63f039bd3cdc.jpg");
+  }
+  .phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .phuket p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }</style></center>
